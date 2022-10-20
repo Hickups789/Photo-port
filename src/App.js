@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+import React from "react";
+import Nav from "./components/Nav";
+import About from "./components/About";
+import ContactForm from "./components/Contact";
+
+function App() {
+=======
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
@@ -16,6 +24,7 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
+>>>>>>> develop
   return (
     <div>
       <Nav
@@ -24,10 +33,16 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
+<<<<<<< HEAD
+        <ContactForm></ContactForm>
+        <Gallery currentCategory={currentCategory}></Gallery>
+        <About></About>
+=======
         <div>
         <Gallery currentCategory={currentCategory}></Gallery>
           <About></About>
         </div>
+>>>>>>> develop
       </main>
     </div>
   );
