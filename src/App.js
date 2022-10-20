@@ -27,7 +27,11 @@ function App() {
 >>>>>>> develop
   return (
     <div>
-      <Nav />
+      <Nav
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+      ></Nav>
       <main>
 <<<<<<< HEAD
         <ContactForm></ContactForm>
